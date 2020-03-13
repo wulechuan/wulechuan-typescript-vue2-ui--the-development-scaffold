@@ -27,6 +27,7 @@
 
 实际使用时，请：
 
+-   删除 `.git` 文件夹。
 -   将本 `ReadMe.md` 删除。并将 `ReadMe.component*.md` 中的“`component`”字样删除。
 -   将根文件夹下的 `package.json` 中的 `"private"` 项目去除，或改为 `false`。
 -   在根文件夹下的 `package.json` 中，按需填写搜索关键字。
