@@ -28,7 +28,10 @@
 实际使用时，请：
 
 -   删除 `.git` 文件夹。
--   将本 `ReadMe.md` 删除。并将 `ReadMe.component*.md` 中的“`component`”字样删除。
+-   将本 `ReadMe.md` 删除。
+-   将 `Virtual-ReadMe*.md` 重命名，具体要求是删除文件名中的“`Virtual-`”字样。
 -   将根文件夹下的 `package.json` 中的 `"private"` 项目去除，或改为 `false`。
 -   在根文件夹下的 `package.json` 中，按需填写搜索关键字。
 -   在根文件夹下的 `package.json` 中，按需填写与 Git 有关的信息。
+-   执行一次 `npm i`，以安装各个依赖包。
+-   不妨执行一次 `npm up`，以升级各个依赖包。

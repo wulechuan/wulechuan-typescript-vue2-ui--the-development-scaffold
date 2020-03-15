@@ -21,7 +21,7 @@ module.exports = {
                 to:   ' href="$1.html$2"',
             },
             {
-                from: '<link rel="stylesheet" href="./node_modules/@wulechuan/css-stylus-markdown-themes/dist/css/wulechuan-styles-for-html-via-markdown--vscode.default.min.css">',
+                from: /<link rel="stylesheet" href="(\.\/|(\.\.\/)+)node_modules\/@wulechuan\/css-stylus-markdown-themes\/dist\/css\/wulechuan-styles-for-html-via-markdown--vscode\.default\.min\.css">/gi,
                 to:   '',
             },
         ],
