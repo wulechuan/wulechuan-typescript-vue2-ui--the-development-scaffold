@@ -27,12 +27,11 @@
         "generate-html-docs": "npm  run  remove-all-html-docs    &&    wlc-md-to-html  -i ./*.md,./documents/**/*.md  -E3  -C ./documents/wlc-md-to-html.config.js  --to '*'",
         "_lint-dist": "eslint    --fix    ./dist/**/*.vue    ./dist/**/*.js",
         "_lint-source": "eslint  --fix  ./source/**/*.vue  ./source/**/*.ts  ./gulpfile.esm.js/**/*  ./tsconfig.js",
-        "lint": "npm  run  _lint-source         &    npm  run  _lint-dist",
-        "build": "gulp  --silent  buildOnce    &&    npm  run  _lint-dist",
+        "lint": "npm  run  _lint:source                                         &    npm  run  _lint:dist",
+        "dist": "npm  run  _lint:source    &&    gulp   --silent  buildOnce    &&    npm  run  _lint:dist",
         "start": "gulp  --silent",
-        "dist": "npm  i    &&    npm  run  _lint-source    &&    npm  run  build",
-        "before-git-commit": "npm  run  dist",
-        "prepublishOnly": "npm   run  dist"
+        "before-git-commit": "npm  i    &&    npm  run  dist",
+        "prepublishOnly": "npm                     run  dist"
     },
     "homepage": "https://github.com/wulechuan/wulechuan-typescript-vue2-ui--something#readme",
     "repository": {
@@ -43,10 +42,10 @@
         "url": "https://github.com/wulechuan/wulechuan-typescript-vue2-ui--something/issues"
     },
     "peerDependencies": {
-        "vue": "^2.6.11"
+        "vue": "^2.6.11",
+        "vue-property-decorator": "^8.4.0"
     },
     "dependencies": {
-        "vue-property-decorator": "^8.4.0"
     },
     "devDependencies": {
         "@types/vue": "^2.0.0",

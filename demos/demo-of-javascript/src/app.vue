@@ -6,7 +6,7 @@
 
 <script>
 import Vue from 'vue'
-import DemoPage from './views/demo-page.vue'
+import DemoPage from './views/pages/demo-page.vue'
 export default {
     components: {
         'demo-page': DemoPage,
