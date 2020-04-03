@@ -1,5 +1,6 @@
-import through from 'through2'
 import path from 'path'
+import through from 'through2'
+import createNewGulpError from 'plugin-error'
 
 import {
     createATaskCycle,

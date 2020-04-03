@@ -2,8 +2,9 @@ import through           from 'through2'
 import typescript        from 'typescript'
 // import gulpUglifyES      from 'gulp-uglify-es'
 
-import replaceExt        from 'replace-ext'
-import changeIndentation from 'indent.js'
+import createNewGulpError from 'plugin-error'
+import replaceExt         from 'replace-ext'
+import changeIndentation  from 'indent.js'
 
 import {
     createATaskCycle,
