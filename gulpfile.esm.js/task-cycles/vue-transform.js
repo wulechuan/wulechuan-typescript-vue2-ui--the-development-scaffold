@@ -20,7 +20,7 @@ export function createOneTaskCycleForProcessVueFilesOfTypeScripts(options) {
     } = options
 
     const {
-        vueFileConversionOptions,
+        vueFileConversionOptions = {},
     } = extraOptions
 
     return createATaskCycle({

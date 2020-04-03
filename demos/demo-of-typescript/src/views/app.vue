@@ -4,14 +4,18 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import Vue from 'vue'
-import DemoPage from './views/pages/demo-page.vue'
-export default {
+import { Component } from 'vue-property-decorator'
+
+import DemoPage from '@/views/pages/demo-page.vue'
+
+@Component({
     components: {
         'demo-page': DemoPage,
     },
-}
+})
+export default class App extends Vue {}
 </script>
 
 <style lang="stylus">

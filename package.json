@@ -42,10 +42,11 @@
         "url": "https://github.com/wulechuan/wulechuan-typescript-vue2-ui--something/issues"
     },
     "peerDependencies": {
-        "vue": "^2.6.11",
-        "vue-property-decorator": "^8.4.0"
+        "vue": "^2.6.11"
     },
-    "dependencies": {},
+    "dependencies": {
+        "vue-property-decorator": "^8.4.1"
+    },
     "devDependencies": {
         "@types/vue": "^2.0.0",
         "@typescript-eslint/eslint-plugin": "^2.23.0",
