@@ -5,7 +5,7 @@ declare module '@wulechuan/vue2-ui--something' {
     //     [cssClassName: string]: boolean | undefined;
     // };
 
-    export class Page extends Vue {
+    export default class Page extends Vue {
         public myProp1?: any;
         private something: number;
         private myGetter1: () => boolean;
