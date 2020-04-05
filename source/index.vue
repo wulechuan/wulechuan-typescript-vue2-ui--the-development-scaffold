@@ -12,6 +12,8 @@ import { Component, Prop } from 'vue-property-decorator'
 export default class MyComponent1 extends Vue {
     @Prop() myProp1?: any
 
+    something = 319
+
     private get myGetter1(): boolean {
         return !!this.myProp1
     }
