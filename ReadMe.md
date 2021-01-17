@@ -33,5 +33,5 @@
 -   将根文件夹下的 `package.json` 中的 `"private"` 项目去除，或改为 `false`。
 -   在根文件夹下的 `package.json` 中，按需填写搜索关键字。
 -   在根文件夹下的 `package.json` 中，按需填写与 Git 有关的信息。
--   执行一次 `npm i`，以安装各个依赖包。
--   不妨执行一次 `npm up`，以升级各个依赖包。
+-   执行一次 `npm-update-packages-to-latest-versions.ps1` 或 `npm-update-packages-to-latest-versions.sh`，以安装各个依赖包的最新版本。
+    > 直接执行 `npm i` 并不更新这些包的版本，因此不是最佳行为。

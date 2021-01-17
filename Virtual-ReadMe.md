@@ -3,10 +3,6 @@
 <link rel="stylesheet" href="./node_modules/@wulechuan/css-stylus-markdown-themes/dist/css/wulechuan-styles-for-html-via-markdown--vscode.default.min.css">
 
 
-## Multilingual Editions of this Article
-
-- [English version of this ReadMe](./ReadMe.en-US.md)
-
 
 
 
